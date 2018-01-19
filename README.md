@@ -1,7 +1,5 @@
 # Docker image of Protractor with headless Chrome
 
-[![Build Status](https://travis-ci.org/jciolek/docker-protractor-headless.svg?branch=master)](https://travis-ci.org/jciolek/docker-protractor-headless)
-
 Protractor end to end testing for AngularJS - dockerised with headless real Chrome. This image is meant as a drop-in replacement for Protractor, so you can use it virtually in the same way you would use Protractor installed directly on your machine.
 
 ## Why headless Chrome?
@@ -28,7 +26,7 @@ The image in the latest version contains the following packages in their respect
 
 * Chrome - 59
 * Protractor - 4.0.14
-* Node.js - 6.9.4
+* Node.js - 8.x.x
 * Chromedriver - 2.32
 
 The packages are pinned to those versions so that and they should work together without issues. Pulling in the latest version of Chrome during image build proved unsuccessful at times, because Chromedriver is usually lagging behind with support.
