@@ -1,5 +1,4 @@
-FROM node:6.9.4-slim
-MAINTAINER j.ciolek@webnicer.com
+FROM node:8
 WORKDIR /tmp
 COPY webdriver-versions.js ./
 ENV CHROME_PACKAGE="google-chrome-stable_59.0.3071.115-1_amd64.deb" NODE_PATH=/usr/local/lib/node_modules:/protractor/node_modules
