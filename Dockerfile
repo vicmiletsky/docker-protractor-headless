@@ -18,6 +18,7 @@ RUN npm install -g protractor@4.0.14 minimist@1.2.0 && \
     rm -rf /var/lib/apt/lists/* \
     rm ${CHROME_PACKAGE} && \
     mkdir /protractor
+RUN npm i -g yarn
 COPY protractor.sh /
 COPY environment /etc/sudoers.d/
 # Fix for the issue with Selenium, as described here:
